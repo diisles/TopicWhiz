@@ -4,6 +4,7 @@ import { Navigator } from 'react-native';
 import signIn from './components/auth/signIn';
 import signUp from './components/auth/signUp';
 import chooseName from './components/auth/chooseName';
+import forgotPassword from './components/auth/forgot-password';
 
 import topics from './components/topics';
 import topicDetail from './components/topic-detail';
@@ -11,9 +12,10 @@ import topicDetail from './components/topic-detail';
 const routes = {
   signIn,
   signUp,
-  topics,
   chooseName,
-  topicDetail
+  forgotPassword,
+  topics,
+  topicDetail,
 };
 
 module.exports = React.createClass({

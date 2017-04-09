@@ -62,7 +62,9 @@ module.exports = React.createClass({
           </Text>
         </TouchableOpacity>
         <View style={styles.links}>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => this.props.navigator.push({ name: 'forgotPassword' })}
+          >
             <Text style={styles.link}>
               Forgot Password?
             </Text>
